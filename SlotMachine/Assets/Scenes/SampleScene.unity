@@ -155,6 +155,21 @@ Prefab:
     - target: {fileID: 54475425745837846, guid: 845bcf631bc86254fa58b16fb536d6c4,
         type: 2}
       propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54475425745837846, guid: 845bcf631bc86254fa58b16fb536d6c4,
+        type: 2}
+      propertyPath: m_Constraints
+      value: 94
+      objectReference: {fileID: 0}
+    - target: {fileID: 54475425745837846, guid: 845bcf631bc86254fa58b16fb536d6c4,
+        type: 2}
+      propertyPath: m_AngularDrag
+      value: 0.87
+      objectReference: {fileID: 0}
+    - target: {fileID: 54475425745837846, guid: 845bcf631bc86254fa58b16fb536d6c4,
+        type: 2}
+      propertyPath: m_Mass
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -354,6 +369,21 @@ Prefab:
     - target: {fileID: 54475425745837846, guid: 845bcf631bc86254fa58b16fb536d6c4,
         type: 2}
       propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54475425745837846, guid: 845bcf631bc86254fa58b16fb536d6c4,
+        type: 2}
+      propertyPath: m_Constraints
+      value: 94
+      objectReference: {fileID: 0}
+    - target: {fileID: 54475425745837846, guid: 845bcf631bc86254fa58b16fb536d6c4,
+        type: 2}
+      propertyPath: m_AngularDrag
+      value: 0.87
+      objectReference: {fileID: 0}
+    - target: {fileID: 54475425745837846, guid: 845bcf631bc86254fa58b16fb536d6c4,
+        type: 2}
+      propertyPath: m_Mass
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -450,6 +480,21 @@ Prefab:
     - target: {fileID: 54475425745837846, guid: 845bcf631bc86254fa58b16fb536d6c4,
         type: 2}
       propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54475425745837846, guid: 845bcf631bc86254fa58b16fb536d6c4,
+        type: 2}
+      propertyPath: m_Constraints
+      value: 94
+      objectReference: {fileID: 0}
+    - target: {fileID: 54475425745837846, guid: 845bcf631bc86254fa58b16fb536d6c4,
+        type: 2}
+      propertyPath: m_AngularDrag
+      value: 0.87
+      objectReference: {fileID: 0}
+    - target: {fileID: 54475425745837846, guid: 845bcf631bc86254fa58b16fb536d6c4,
+        type: 2}
+      propertyPath: m_Mass
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -506,6 +551,21 @@ Prefab:
     - target: {fileID: 54475425745837846, guid: 845bcf631bc86254fa58b16fb536d6c4,
         type: 2}
       propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54475425745837846, guid: 845bcf631bc86254fa58b16fb536d6c4,
+        type: 2}
+      propertyPath: m_Constraints
+      value: 94
+      objectReference: {fileID: 0}
+    - target: {fileID: 54475425745837846, guid: 845bcf631bc86254fa58b16fb536d6c4,
+        type: 2}
+      propertyPath: m_AngularDrag
+      value: 0.87
+      objectReference: {fileID: 0}
+    - target: {fileID: 54475425745837846, guid: 845bcf631bc86254fa58b16fb536d6c4,
+        type: 2}
+      propertyPath: m_Mass
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -562,6 +622,21 @@ Prefab:
     - target: {fileID: 54475425745837846, guid: 845bcf631bc86254fa58b16fb536d6c4,
         type: 2}
       propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54475425745837846, guid: 845bcf631bc86254fa58b16fb536d6c4,
+        type: 2}
+      propertyPath: m_Constraints
+      value: 94
+      objectReference: {fileID: 0}
+    - target: {fileID: 54475425745837846, guid: 845bcf631bc86254fa58b16fb536d6c4,
+        type: 2}
+      propertyPath: m_AngularDrag
+      value: 0.87
+      objectReference: {fileID: 0}
+    - target: {fileID: 54475425745837846, guid: 845bcf631bc86254fa58b16fb536d6c4,
+        type: 2}
+      propertyPath: m_Mass
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

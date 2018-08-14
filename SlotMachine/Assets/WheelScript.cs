@@ -27,10 +27,13 @@ public class WheelScript : MonoBehaviour {
     }
     public void Spin()
     {
-        //roughly 30-50 is a good value for torque
-        spinSpeed = (Random.value * 20) + 30;
+        //roughly 20-50 is a good value for torque
+        spinSpeed = (Random.value * 30.0f) + 20.0f;
 
         wheelBody.AddTorque(spinSpeed, 0, 0);
+
+        //maybe should cook my own rotation rather than use AddTorque so that I can make the wheels stop in a more-centered fashion?
+
       // wheelBody.transform.Rotate(0)
 
     }
