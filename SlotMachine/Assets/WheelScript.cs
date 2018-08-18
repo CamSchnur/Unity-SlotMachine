@@ -8,27 +8,87 @@ public class WheelScript : MonoBehaviour {
     private float spinSpeed = 40;
     private Rigidbody wheelBody;
     private float rotDegrees;
+    private int rotDegreesNormalized;
+
+    private Material faceGreen;
+    private Material faceYellow;
+    private Material faceRed;
+
 	// Use this for initialization
 	void Start ()
     {
         rotDegrees = 0.0f;
         wheelBody = GetComponent<Rigidbody>();
-	}
+
+        
+        faceRed = Resources.Load("wheelSurface", typeof(Material)) as Material;
+        faceYellow = Resources.Load("wheelSurfaceYellow", typeof(Material)) as Material;
+        faceGreen = Resources.Load("wheelSurfaceGreen", typeof(Material)) as Material;
+    }
+
 	
 	// Update is called once per frame
 	void Update ()
     {
-     //   Spin();
+        //   Spin();
+        AdjustSpin();
 	}
 
     private void FixedUpdate()
     {
        
     }
+
+    private List<GameObject> GetFaces()
+    {
+        List<GameObject> faces = new List<GameObject>();
+        foreach (Transform child in this.GetComponentsInChildren<Transform>())
+        {
+            if (child.gameObject.CompareTag("face"))
+            {
+                faces.Add(child.gameObject);
+            }
+        }
+        return faces;
+    }
+    /// <summary>
+    /// while wheel is spinning, increase/decrease angular drag to get it to stop nearer a face
+    /// </summary>
+    private void AdjustSpin()
+    {
+        rotDegrees = wheelBody.transform.eulerAngles.x;
+        //shows face at ~0, ~45, ~90, etc
+        rotDegreesNormalized = (int)rotDegrees % 45;
+        if (rotDegreesNormalized < 5 || rotDegreesNormalized > 40)
+        {
+            //within 5 degrees of showing a face, let's slow it down.
+            SetMaterial(faceRed);
+
+        }
+        else if (rotDegreesNormalized < 15 || rotDegreesNormalized > 30)
+        {
+            //closer but not qutie there
+            SetMaterial(faceYellow);
+        }
+        else
+        {
+            SetMaterial(faceGreen);
+        }
+
+    }
+
+    private void SetMaterial(Material m)
+    {
+        foreach (GameObject go in GetFaces())
+        {
+            go.GetComponent<Renderer>().material = m;
+        }
+    }
+
     public void Spin()
     {
         //roughly 20-50 is a good value for torque
-        spinSpeed = (Random.value * 30.0f) + 20.0f;
+        spinSpeed = (-1.0f) * ((Random.value * 30.0f) + 20.0f);
 
         wheelBody.AddTorque(spinSpeed, 0, 0);
 
