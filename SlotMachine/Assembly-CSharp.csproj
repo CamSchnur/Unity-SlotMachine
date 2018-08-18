@@ -64,16 +64,16 @@
     <Compile Include="Assets\SlotMachineController.cs" />
     <Compile Include="Assets\WheelScript.cs" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>C:/Users/Cam/Documents/2d-ufo/Unity-SlotMachine/SlotMachine/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/Cam/Documents/2d-ufo/NEw/Unity-SlotMachine/SlotMachine/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/Cam/Documents/2d-ufo/Unity-SlotMachine/SlotMachine/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/Cam/Documents/2d-ufo/NEw/Unity-SlotMachine/SlotMachine/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/Cam/Documents/2d-ufo/Unity-SlotMachine/SlotMachine/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/Cam/Documents/2d-ufo/NEw/Unity-SlotMachine/SlotMachine/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/Cam/Documents/2d-ufo/Unity-SlotMachine/SlotMachine/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/Cam/Documents/2d-ufo/NEw/Unity-SlotMachine/SlotMachine/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
