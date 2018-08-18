@@ -5,7 +5,7 @@ using UnityEngine;
 public class WheelScript : MonoBehaviour {
 
 
-    private float spinSpeed = 40;
+    private float spinSpeed = 50;
     private Rigidbody wheelBody;
     private float rotDegrees;
     private int rotDegreesNormalized;
@@ -59,19 +59,24 @@ public class WheelScript : MonoBehaviour {
         rotDegrees = wheelBody.transform.eulerAngles.x;
         //shows face at ~0, ~45, ~90, etc
         rotDegreesNormalized = (int)rotDegrees % 45;
-        if (rotDegreesNormalized < 5 || rotDegreesNormalized > 40)
+        if (/*rotDegreesNormalized < 5 ||*/ rotDegreesNormalized > 40)
         {
+            wheelBody.angularDrag = 2.5f;
             //within 5 degrees of showing a face, let's slow it down.
             SetMaterial(faceRed);
 
         }
-        else if (rotDegreesNormalized < 15 || rotDegreesNormalized > 30)
+        else if (/*rotDegreesNormalized < 15 ||*/ rotDegreesNormalized > 30)
         {
-            //closer but not qutie there
+            //closer but not quite there
+
+            wheelBody.angularDrag = 1.87f;
             SetMaterial(faceYellow);
         }
         else
         {
+            //should spin faster
+            wheelBody.angularDrag = 0.4f;
             SetMaterial(faceGreen);
         }
 
