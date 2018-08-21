@@ -21,7 +21,10 @@ SlotMachine/Temp/
 .vs/
 
 #Random Unity Crap
-*/EditorInstance.json
+SlotMachine/Library/EditorInstance.json
+SlotMachine/Library/*.dll
+SlotMachine/Library/metadata/*
+*.log
 
 # Files built by Visual Studio
 *_i.c
